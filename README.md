@@ -165,6 +165,14 @@ podemos usar comodines por ejemplo si no queremos subir imagenes
 
  - .jpg
 
+# Seccion 08 Git Diff
 
+Esto nos muestra la diferencia de antes y despues de un archivo
+
+Otra forma de usar el git status es poniendo
+ - git status -s
+
+Esto nos muestra los archivos con una M en rojo si este fue modificado, si es una archivo creado aparecen signos de interrogacion
+Una vez que hacemos el git add , y consultamos el nuevo stado, nos dice que esta en M verde modificado agregado, y el creado con una A ver de Add
 
 

@@ -1,1 +1,3 @@
-Hola mundo
+Este es el archivo que modificamos para este curso 
+modificamos para el git diff
+esta es la tercer linea
