@@ -107,6 +107,7 @@ Para poder sacar un archvio del stage una vez haber hecho git add podemos hacer
 y luego esta el 
   - git push
 
+# Seccion 06, git init, add ,status ,commit
 Parte mas practica de esto
 
 Creamos una carpeta
@@ -147,3 +148,23 @@ ahora vamos a commitear (fotografiar lo que tenemos en el stage )
  Aca una vez que tengamos commiteado todo, podemos modificar un arhcivo, el readme en este caso, guardamos y podemos consultar con git status nuevamente
 
  Lo que nos aparece que es hay una rchivo modificado y que debemos subirlo si queremos tener todo actualizarlo
+
+ hacemos el git add y commiteamos
+
+# Seccion 7 Git .IGNORE
+
+Es un archivo de configuracion donde ponemos todos los archivos y carpetas que van a ser ignorados por git, y que no van a ser fotografiados ni subidos, creamos el archivo .gitignore en vsc
+ - .gitignore
+
+una vez creado el archivo, los archivos que no solemos querer que se suban por ejemplo
+
+ - .env suelen tener pass contraseñas, no queremos que eso se suba al git
+ - node_modules
+
+podemos usar comodines por ejemplo si no queremos subir imagenes
+
+ - .jpg
+
+
+
+
