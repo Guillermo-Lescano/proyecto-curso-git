@@ -196,7 +196,26 @@ Para poder irnos a otra rama es
 Y si nos queremos ir a una rama y la creamos ahi es
   - git checkout -b NombreRama
 
-Si hacemos cambio y luego commiteamos, estamos haciendo el commit en esta rama, la otra rama queda desactualizada
+Si hacemos cambio y luego commiteamos, estamos haciendo el commit en esta rama, la otra rama queda desactualizada. 
+Si nosotros queremos unir estos cambios a master, tenemos que irnos a master y hacer un merge de la rama nueva dentro de master
+ - git merge RamaNueva
+
+Se realiza los cambios el cual vamos a traer la rama nueva dentro de master sin problemas
 
 
+# Seccion 11 creacion de repo remoto
+
+Debemos ir a gitHub y sguit unos pasos
+ - New Repository
+
+Luego colocamos el nombre del repo y ponemos
+ - Create Repository
+
+Luego de eso nos va a salir una serie de comando a seguir, que son
+ - git init
+ - git add . / git add file1.txt
+ - git commit -m 'nombre del commit'
+ - git branch -M main ( Aca creamos una rama llamada main y nos vamos a ella)
+ - git remote add origin https://github.com/Guillermo-Lescano/proyecto-curso-git.git (esto nos sale en los paso a seguir)
+ - git push -u origin main (en mi caso es master, main es porque hicimos la rama main arriba)
 
