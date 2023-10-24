@@ -175,4 +175,28 @@ Otra forma de usar el git status es poniendo
 Esto nos muestra los archivos con una M en rojo si este fue modificado, si es una archivo creado aparecen signos de interrogacion
 Una vez que hacemos el git add , y consultamos el nuevo stado, nos dice que esta en M verde modificado agregado, y el creado con una A ver de Add
 
+ - git diff
+
+# Seccion 09 Git Log
+
+Aca vemos como visualizar los commit's 
+ - git log 
+ - git log --oneline
+
+Recordamos que los commit son como fotografias uno atras de otro y el oneline nos muestra el hash y el nombre de los commit que hicimos
+
+# Seccion 10 Ramas/branch git branch, checkout
+
+Esto nos dice en que rama estamos parados
+  - git branch
+
+Para poder irnos a otra rama es
+  - git checkout NombreRama
+
+Y si nos queremos ir a una rama y la creamos ahi es
+  - git checkout -b NombreRama
+
+Si hacemos cambio y luego commiteamos, estamos haciendo el commit en esta rama, la otra rama queda desactualizada
+
+
 
