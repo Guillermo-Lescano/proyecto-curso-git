@@ -143,3 +143,7 @@ si por ejemplo modificamos alguno de estos dos archivos los modificamos y ponemo
 
 ahora vamos a commitear (fotografiar lo que tenemos en el stage )
  - git commit -m 'nombre del commit'
+
+ Aca una vez que tengamos commiteado todo, podemos modificar un arhcivo, el readme en este caso, guardamos y podemos consultar con git status nuevamente
+
+ Lo que nos aparece que es hay una rchivo modificado y que debemos subirlo si queremos tener todo actualizarlo
