@@ -319,3 +319,5 @@ y ahi realizamos el clone y ya tenemos la conexion de forma local y de forma rem
 
 # Seccion 18 - Git merge
 
+Esto es par apoder combinar las ramas, esta combinacion hay veces que trae conflictos, ya que una rama tiene el mismo archivo pero modificado, y la otra rama tiene el archivo desactualizado, y no sabemos cual es el que debemos aceptar
+
