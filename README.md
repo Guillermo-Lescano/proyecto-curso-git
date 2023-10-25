@@ -261,5 +261,32 @@ Esto nos muestra los stash que tenemos
 
 para poder recuperar el stash que quedo en WIP necesitamos poner
  - git stash pop
- 
+
 y nos trae los cambios en los que estabamos
+
+# Seccion 14 - Eliminar ramas
+
+Podemos eliminar ramas de forma local y de forma remota para poder hacermo necesitamos
+ - git branch -d nombreRama 
+
+Esto lo elimina de forma local, en el repo remoto va a seguir estando ahi, esto quiere decir que podemos irnos a la rama que eliminamos ya que sigue remotamente activa
+
+Si la quiero borrar de forma definitiva debemos hacer lo mismo que recien que borramos localmente, pero ahora agreamos
+ - git branch -d nombreRama 
+ - git push origin --delete nombreRama
+
+con estos dos comandos borramos la rama localmente y de forma remota, asi que ya se borro en el repositorio tambien.
+
+# Seccion 15 - Git fetch
+
+A diferencia del git pull, solo trae el historia de cambio que se hicieron de forma remota
+ -git fetch
+
+Para poder ver lo que trae el git fetch necesitamos poner este comando de git
+ - git log --oneline --all
+
+Nos permite ver todas las modificaciones que se hicieron de forma remota (esto necesitamos hacerlo despues del git fetch), despues de que vimos lo que se cambio, podemos hacer un git pull, casi nunca se usa, porque podemos verlo desde el repo, o lo traemos directamente como el pull, pero siempre es bueno saberlo.
+ - git tree se usa solo en mc y nos trae todo un arbol con la info
+
+# Seccion 16 - Git reset / --hard
+
