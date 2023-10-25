@@ -31,7 +31,7 @@ Podemos tener un historial donde podemos ver donde se agregaron o sacaron cambio
 
 ![Cuando comenzo a fallar](./Cuando-Comenzo-Fallar.bmp)
 
-# Seccion 03 GIT CONFIG
+# Seccion 03 - GIT CONFIG
 
 - git config --global user.name "Guillermo Lescano"
 
@@ -49,7 +49,7 @@ Podemos tener un historial donde podemos ver donde se agregaron o sacaron cambio
 - git config --global core.autocrlf true  <!--Si es windows true-->
 - git config --global core.autocrlf input <!--Si es linux o mac input-->
 
-# Seccion 04 Comando basicos de la terminal
+# Seccion 04 - Comando basicos de la terminal
 
 <!--Vemos el listado de carpetas-->
 - ls
@@ -72,7 +72,7 @@ Podemos tener un historial donde podemos ver donde se agregaron o sacaron cambio
 <!---->
 - git 
 
-# Seccion 05 Flujo de GIT
+# Seccion 05 - Flujo de GIT
  Vamos a ver el flujo de git, como nuestro archivos pasan de estado en estado hasta llegar al estado remoto que es el estado final
 
 ![Flujo de Git](./Flujo-Git.bmp)
@@ -84,7 +84,7 @@ esto no hace nada con los archivos hasta que no hacemos git add
   
   - git add
 
-![Flujo de Git](./git-add.bmp)
+![Flujo de Git](./git-add-.bmp)
 
 aqui es cuando pasa al estado stage y git ya los detecta
 
@@ -107,7 +107,7 @@ Para poder sacar un archvio del stage una vez haber hecho git add podemos hacer
 y luego esta el 
   - git push
 
-# Seccion 06, git init, add ,status ,commit
+# Seccion 06 - Git init, add ,status ,commit
 Parte mas practica de esto
 
 Creamos una carpeta
@@ -151,7 +151,7 @@ ahora vamos a commitear (fotografiar lo que tenemos en el stage )
 
  hacemos el git add y commiteamos
 
-# Seccion 7 Git .IGNORE
+# Seccion 7 - Git .IGNORE
 
 Es un archivo de configuracion donde ponemos todos los archivos y carpetas que van a ser ignorados por git, y que no van a ser fotografiados ni subidos, creamos el archivo .gitignore en vsc
  - .gitignore
@@ -165,7 +165,7 @@ podemos usar comodines por ejemplo si no queremos subir imagenes
 
  - .jpg
 
-# Seccion 08 Git Diff
+# Seccion 08 - Git Diff
 
 Esto nos muestra la diferencia de antes y despues de un archivo
 
@@ -177,7 +177,7 @@ Una vez que hacemos el git add , y consultamos el nuevo stado, nos dice que esta
 
  - git diff
 
-# Seccion 09 Git Log
+# Seccion 09 - Git Log
 
 Aca vemos como visualizar los commit's 
  - git log 
@@ -185,7 +185,7 @@ Aca vemos como visualizar los commit's
 
 Recordamos que los commit son como fotografias uno atras de otro y el oneline nos muestra el hash y el nombre de los commit que hicimos
 
-# Seccion 10 Ramas/branch git branch, checkout
+# Seccion 10 - Ramas/branch git branch, checkout
 
 Esto nos dice en que rama estamos parados
   - git branch
@@ -203,7 +203,7 @@ Si nosotros queremos unir estos cambios a master, tenemos que irnos a master y h
 Se realiza los cambios el cual vamos a traer la rama nueva dentro de master sin problemas
 
 
-# Seccion 11 creacion de repo remoto
+# Seccion 11 - Creacion de repo remoto
 
 Debemos ir a gitHub y sguit unos pasos
  - New Repository
@@ -219,3 +219,47 @@ Luego de eso nos va a salir una serie de comando a seguir, que son
  - git remote add origin https://github.com/Guillermo-Lescano/proyecto-curso-git.git (esto nos sale en los paso a seguir)
  - git push -u origin main (en mi caso es master, main es porque hicimos la rama main arriba)
 
+Cuando alguien esta trabajando en otra rama, o subimos un archivo desde gitHub y necesitamos actualizar nuestro repo local, tenemos para hacer el git pull
+- git pull
+
+Esto nos trae los cambios desde el repo a nuestra rama local
+
+# Seccion 12 - Git pull y Git push
+
+![git push](./git-push.bmp)
+
+En resumen el git push es compartir tus cambios en gitHub que es una carpeta remota y ahi tus compañeros de proyecto puedan vizualizar tus cambios
+
+
+En este caso el git pull es traer los cambios mas recientes del repo y traerlos a tu carpeta local
+![git push](./git-pull.bmp)
+
+ - git branch -u origin/master ==> seteamos la rama que queremos subir
+
+# Seccion 13 - Git Tag y Switch
+
+Git tag es un comando donde nos permite etiquetar uno de los commit como un commit importante
+ - git tag nombreTag
+
+El git switch el verdadero comando que usa vsc cuando cambia de ramas, checkout trae la rama si no la tememos local o creamos una nueva, y el switch es para realmente cambiar de rama de forma local 
+ - git switch nombreDeRama
+
+El git checkout nos deja viajar por commit tambien, cosa que el switch no nos deja
+ - git checkout 00b14b3 (es el numero del commit)
+
+con el switch no nos deja, tambien otra cosa que nos deja hacer el checkout es viajar por commit y tambien en etiquetas creadas con el git tag
+ - git checkout nombreEtiqueta
+
+# Seccion 14 - Git stash y stash pop
+
+Es como un commit temporal el git stash que guarda los cambios que no tenemos commiteados y lo guarda, esto por ejemplo cambiarnos de rama y tenemos algo sin resolver aun, y no podemos commitear porque tiene un error, entonces lo que sucede es que stasheamos esto sin guardar aun, y cuando volvemos a la rama volvemos a utilizar estos datos
+
+ - git stash
+ - git stash list 
+
+Esto nos muestra los stash que tenemos
+
+para poder recuperar el stash que quedo en WIP necesitamos poner
+ - git stash pop
+ 
+y nos trae los cambios en los que estabamos
