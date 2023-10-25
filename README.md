@@ -290,3 +290,32 @@ Nos permite ver todas las modificaciones que se hicieron de forma remota (esto n
 
 # Seccion 16 - Git reset / --hard
 
+Tenemos 3 herramientas, git reset, git reset --hard, git checkout para deshacer cambios.
+
+ - git checkout nombreArchivo
+
+Aca ponemos el nombre del archivo que queremos volver a como estaba antes
+
+ - git reset
+
+git reset sirve para volver atras los cambio de los archivos, este solo los saca del stagging , pero si queremos volver al anterior estado del commit anterior todos los archivos debemos poner el --hard
+ - git reset --hard
+
+Si queremos volver a un commit anterior o a antes debemos poner
+ - git reset --hard hash (el hash es el nombre del commit , sale en el repo o con el git log --oneline nos aparece al costado de cada commit)
+
+esto elimina el ultimo commit y trabajamos en el anterior, se puede revertir pero se va mas adelante
+
+# Seccion 17 - Git clone
+
+Podemos clonar un repo de 3 formas
+ - HTTPS que es con la url de siempre
+ - SSH que es una especie de encriptacion, es mucho mas seguro
+
+Usamos la URL y en donde vamos a crear el clone del repo, abrimos el git bash 
+ - git clone https://github.com/Guillermo-Lescano/proyecto-curso-git.git
+
+y ahi realizamos el clone y ya tenemos la conexion de forma local y de forma remota
+
+# Seccion 18 - Git merge
+
