@@ -321,3 +321,10 @@ y ahi realizamos el clone y ya tenemos la conexion de forma local y de forma rem
 
 Esto es par apoder combinar las ramas, esta combinacion hay veces que trae conflictos, ya que una rama tiene el mismo archivo pero modificado, y la otra rama tiene el archivo desactualizado, y no sabemos cual es el que debemos aceptar
 
+- git merge NombreRama 
+
+# Seccion 19 - Fork / Pull request
+
+El fork es par ahacer un clone de un repo que no es nuestro, y luego le pedimos al dueño del repo a que haga cambios como recomendaicon asi esta los acepta
+
+PullRequest lo que hacemos es pedirle al dueño del repositorio que haga el cambio que nosotros le sugerimos, esa persona lo puede aceptar o no, todo depende
